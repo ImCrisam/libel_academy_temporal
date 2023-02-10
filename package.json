@@ -1,11 +1,11 @@
 {
   "name": "prueba_react_libel_academy",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --base=/libel_academy/",
+    "build": "tsc && vite build ",
     "preview": "vite preview"
   },
   "dependencies": {
