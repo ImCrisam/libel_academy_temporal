@@ -1,0 +1,11 @@
+.cardimg {
+  aspect-ratio: 16/9;
+  width: 164px;
+  height: 240px;
+}
+.fs-7 {
+  font-size: small;
+}
+.mb-n2 {
+  margin-bottom: -7%;
+}
