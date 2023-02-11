@@ -6,7 +6,10 @@ import { CardCp, PropsCard } from "../CardCp/CardCp";
 import { PropsCarousel } from "../CarouselCp/CarouselCp";
 import { PropsCarouselView } from "../CarouselView/CarouselView";
 
-export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
+export function NewCarouselView({
+  title,
+  isRight: isRigth,
+}: PropsCarouselView) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },

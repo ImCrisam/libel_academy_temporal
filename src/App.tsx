@@ -13,7 +13,7 @@ function App() {
         <NewCarouselView
           {...{
             title: "Actions & Drama Movies",
-            isRigth: true,
+            isRight: true,
           }}
         ></NewCarouselView>
       </div>
@@ -21,7 +21,7 @@ function App() {
         <NewCarouselView
           {...{
             title: "Funniest Comedy Movies of 2018",
-            isRigth: false,
+            isRight: false,
           }}
         ></NewCarouselView>
       </div>

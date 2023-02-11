@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 export interface PropsCarouselView {
   title: string;
-  isRigth: boolean;
+  isRight: boolean;
 }
 
-export function CarouselView({ title, isRigth }: PropsCarouselView) {
+export function CarouselView({ title, isRight: isRigth }: PropsCarouselView) {
   const init: PropsCarousel = { arry: [] };
   let { propsCarousel, propsTime } = carouselHook(init);
 
