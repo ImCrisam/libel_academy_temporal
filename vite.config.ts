@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: false ? "/libel_academy/" : "/",
+  base: "/libel_academy_temporal/",
 });
