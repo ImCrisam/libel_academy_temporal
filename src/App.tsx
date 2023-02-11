@@ -6,10 +6,10 @@ import { VideoView } from "./components/VideoView/VideoView";
 function App() {
   return (
     <div className="App">
-      <div className="bg-primary bg-opacity-10 pt-5">
+      <div className="bg-1 bg-opacity-10 pt-5">
         <VideoView></VideoView>
       </div>
-      <div className="bg-2 ">
+      <div className="bg-2 pt-5">
         <NewCarouselView
           {...{
             title: "Actions & Drama Movies",
@@ -17,7 +17,7 @@ function App() {
           }}
         ></NewCarouselView>
       </div>
-      <div className="bg-2 ">
+      <div className="bg-3 pt-5">
         <NewCarouselView
           {...{
             title: "Actions & Drama Movies",
