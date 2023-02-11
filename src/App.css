@@ -1,3 +1,13 @@
 .text-bold {
   font-weight: bold;
 }
+
+.bg-1 {
+  background-color: #252a3a;
+}
+.bg-2 {
+  background-color: #131721;
+}
+.bg-3 {
+  background-color: #0f131d;
+}

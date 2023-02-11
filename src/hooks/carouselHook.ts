@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { PropsCarousel } from "../components/CarouselCp/CarouselCp";
 import { PropsCard } from "../components/CardCp/CardCp";
 
-export const carouselHook = () => {
-  const [propsCarousel, setPropsCarousel] = useState<PropsCarousel>();
+export const carouselHook = (init: PropsCarousel) => {
+  const [propsCarousel, setPropsCarousel] = useState<PropsCarousel>(init);
 
   const propsCard: PropsCard = {
     urlImg:
@@ -41,7 +41,17 @@ export const carouselHook = () => {
         arryCurrent = [propsCard3, propsCard3, propsCard3, propsCard3];
         break;
       default:
-        arryCurrent = [propsCard, propsCard, propsCard, propsCard, propsCard];
+        arryCurrent = [
+          propsCard,
+          propsCard,
+          propsCard,
+          propsCard3,
+          propsCard3,
+          propsCard3,
+          propsCard2,
+          propsCard2,
+          propsCard2,
+        ];
         break;
     }
 

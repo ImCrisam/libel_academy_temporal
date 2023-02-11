@@ -8,7 +8,8 @@ export interface PropsCarouselView {
 }
 
 export function CarouselView({ title, isRigth }: PropsCarouselView) {
-  let { propsCarousel, propsTime } = carouselHook();
+  const init: PropsCarousel = { arry: [] };
+  let { propsCarousel, propsTime } = carouselHook(init);
 
   useEffect(() => {
     propsTime("today");
