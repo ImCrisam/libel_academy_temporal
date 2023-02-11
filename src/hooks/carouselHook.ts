@@ -4,6 +4,7 @@ import { PropsCard } from "../components/CardCp/CardCp";
 
 export const carouselHook = (init: PropsCarousel) => {
   const [propsCarousel, setPropsCarousel] = useState<PropsCarousel>(init);
+  const [type, settype] = useState<"30days" | "week" | "today">("today");
 
   const propsCard: PropsCard = {
     urlImg:
@@ -25,30 +26,33 @@ export const carouselHook = (init: PropsCarousel) => {
     subTitle: "Action, Thiller, 2018",
   };
 
-  let arryCurrent: PropsCard[] = [
-    propsCard,
-    propsCard2,
-    propsCard,
-    propsCard2,
-    propsCard,
-  ];
-  function propsTime(category: string) {
+  let arryCurrent: PropsCard[] = [];
+
+  function propsTime(category: "30days" | "week" | "today") {
     switch (category) {
       case "30days":
         arryCurrent = [propsCard2, propsCard2, propsCard2, propsCard2];
         break;
       case "week":
-        arryCurrent = [propsCard3, propsCard3, propsCard3, propsCard3];
+        arryCurrent = [
+          propsCard3,
+          propsCard3,
+          propsCard3,
+          propsCard3,
+          propsCard3,
+          propsCard3,
+          propsCard3,
+        ];
         break;
       default:
         arryCurrent = [
           propsCard,
+          propsCard3,
           propsCard,
+          propsCard3,
           propsCard,
-          propsCard3,
-          propsCard3,
-          propsCard3,
           propsCard2,
+          propsCard3,
           propsCard2,
           propsCard2,
         ];
@@ -58,6 +62,7 @@ export const carouselHook = (init: PropsCarousel) => {
     const value: PropsCarousel = {
       arry: arryCurrent,
     };
+    settype(category);
 
     setPropsCarousel({ ...value });
   }
@@ -65,5 +70,6 @@ export const carouselHook = (init: PropsCarousel) => {
   return {
     propsCarousel,
     propsTime,
+    type,
   };
 };

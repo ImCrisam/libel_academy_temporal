@@ -3,8 +3,8 @@ import Icono from "../../assets/play icon.png";
 export function VideoView() {
   return (
     <div className="container">
-      <div className="row  mx-auto mt-5 py-5">
-        <div className="col-md-12 col-lg-6 order-md-2 order-lg-1 mt-5">
+      <div className="row  mx-auto mt-5 pb-5">
+        <div className="col-md-12 col-lg-6 order-md-2 order-lg-1 pt-5 ">
           <h1 className="text-bold mb-4 text-white">Big ComeBack</h1>
           <p className="mb-5 text-white">
             Nullam porta, eros id aliquam pulvinar, urna ex mattis eros, quis

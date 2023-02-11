@@ -6,7 +6,7 @@ import { VideoView } from "./components/VideoView/VideoView";
 function App() {
   return (
     <div className="App">
-      <div className="bg-1 bg-opacity-10 pt-5">
+      <div className="bg-1 pt-5">
         <VideoView></VideoView>
       </div>
       <div className="bg-2 pt-5">
@@ -20,7 +20,7 @@ function App() {
       <div className="bg-3 pt-5">
         <NewCarouselView
           {...{
-            title: "Actions & Drama Movies",
+            title: "Funniest Comedy Movies of 2018",
             isRigth: false,
           }}
         ></NewCarouselView>

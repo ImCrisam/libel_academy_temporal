@@ -25,7 +25,7 @@ export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
     },
   };
   const init: PropsCarousel = { arry: [] };
-  let { propsCarousel, propsTime } = carouselHook(init);
+  let { propsCarousel, type, propsTime } = carouselHook(init);
 
   useEffect(() => {
     propsTime("today");
@@ -40,33 +40,33 @@ export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
             " col-md-12 col-lg-8 pb-4"
           }
         >
-          <div className="mb-4">
-            <a
-              className=" text-primary"
+          <div className="mb-4 text-bold text-secondary">
+            <span
+              className={(type == "today" && "text-info") + " "}
               onClick={() => {
                 propsTime("today");
               }}
             >
               Today
-            </a>
+            </span>
             <span className="px-2">/</span>
-            <a
-              className=" text-secondary"
+            <span
+              className={(type == "week" && "text-info") + " "}
               onClick={() => {
                 propsTime("week");
               }}
             >
               This Week
-            </a>
+            </span>
             <span className="px-2">/</span>
-            <a
-              className=" text-secondary"
+            <span
+              className={(type == "30days" && "text-info") + " "}
               onClick={() => {
                 propsTime("30days");
               }}
             >
               Last 30 days
-            </a>
+            </span>
           </div>
           <Carousel
             ref={(el) => (refCarousel = el)}
@@ -115,14 +115,14 @@ export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
             </button>
           </div>
           <hr className="border-secondary"></hr>
-          <a
-            className="text-secundary text-bold  "
+          <span
+            className="text-muted text-bold  "
             onClick={() => {
               alert("View All");
             }}
           >
             VIEW ALL &#62;
-          </a>
+          </span>
         </div>
       </div>
     </div>
