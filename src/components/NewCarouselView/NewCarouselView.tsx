@@ -36,7 +36,7 @@ export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
       <div className="row justify-content-center pb-4">
         <div
           className={
-            (isRigth ? "order-1 order-md-2" : "order-2") +
+            (isRigth ? "order-lg-1 order-md-2" : "order-2") +
             " col-md-12 col-lg-8 pb-4"
           }
         >
@@ -83,7 +83,7 @@ export function NewCarouselView({ title, isRigth }: PropsCarouselView) {
         </div>
         <div
           className={
-            (isRigth ? "order-2 order-md-1" : "order-1") +
+            (isRigth ? "order-lg-2 order-md-1" : "order-1") +
             "  col-md-12 col-lg-4 pb-4 "
           }
         >

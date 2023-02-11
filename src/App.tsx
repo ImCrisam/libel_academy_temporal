@@ -6,6 +6,9 @@ import { VideoView } from "./components/VideoView/VideoView";
 function App() {
   return (
     <div className="App">
+      <div className="bg-primary bg-opacity-10 pt-5">
+        <VideoView></VideoView>
+      </div>
       <div className="bg-2 ">
         <NewCarouselView
           {...{
@@ -14,28 +17,14 @@ function App() {
           }}
         ></NewCarouselView>
       </div>
-      {/**
-       * 
-       <div className="bg-primary bg-opacity-10 pt-5">
-         <VideoView></VideoView>
-       </div>
-      <div className="bg-dark bg-opacity-50">
-        <CarouselView
+      <div className="bg-2 ">
+        <NewCarouselView
           {...{
             title: "Actions & Drama Movies",
-            isRigth: true,
-          }}
-        ></CarouselView>
-      </div>
-      <div className="bg-dark bg-opacity-25">
-        <CarouselView
-          {...{
-            title: "Funniest Comedy Movies of 2018",
             isRigth: false,
           }}
-        ></CarouselView>
+        ></NewCarouselView>
       </div>
-    */}
     </div>
   );
 }
