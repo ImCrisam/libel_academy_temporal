@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "./NewCarouselView.css";
 import { carouselHook } from "../../hooks/carouselHook";
 import { CardCp, PropsCard } from "../CardCp/CardCp";
 import { PropsCarousel } from "../CarouselCp/CarouselCp";
@@ -45,7 +46,7 @@ export function NewCarouselView({
         >
           <div className="mb-4 text-bold text-secondary">
             <span
-              className={(type == "today" && "text-info") + " "}
+              className={(type == "today" && "text-info") + " cursor"}
               onClick={() => {
                 propsTime("today");
               }}
@@ -54,7 +55,7 @@ export function NewCarouselView({
             </span>
             <span className="px-2">/</span>
             <span
-              className={(type == "week" && "text-info") + " "}
+              className={(type == "week" && "text-info") + " cursor"}
               onClick={() => {
                 propsTime("week");
               }}
@@ -63,7 +64,7 @@ export function NewCarouselView({
             </span>
             <span className="px-2">/</span>
             <span
-              className={(type == "30days" && "text-info") + " "}
+              className={(type == "30days" && "text-info") + " cursor"}
               onClick={() => {
                 propsTime("30days");
               }}
@@ -119,7 +120,7 @@ export function NewCarouselView({
           </div>
           <hr className="border-secondary"></hr>
           <span
-            className="text-muted text-bold  "
+            className="text-muted text-bold  cursor"
             onClick={() => {
               alert("View All");
             }}
